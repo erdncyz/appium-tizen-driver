@@ -71,7 +71,7 @@
         "precommit-test"
     ],
     "peerDependencies": {
-        "appium": "^2.11.3"
+        "appium": "^2.0.0"
     },
     "devDependencies": {
         "ajv": "^6.5.3",
