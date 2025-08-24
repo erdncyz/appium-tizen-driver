@@ -1,5 +1,5 @@
 {
-    "name": "appium-tizen-driver",
+    "name": "@erdncyz/appium-tizen-driver",
     "description": "Tizen support for Appium",
     "keywords": [
         "appium",
@@ -10,15 +10,16 @@
         "mobile testing"
     ],
     "version": "2.0.0",
-    "author": "tizen",
+    "author": "Erdinç Yılmaz <erdincyilmaz@example.com>",
     "license": "Apache-2.0",
     "repository": {
         "type": "git",
-        "url": "https://github.com/Samsung/appium-tizen-driver.git"
+        "url": "https://github.com/erdncyz/appium-tizen-driver.git"
     },
     "bugs": {
-        "url": "https://github.com/Samsung/appium-tizen-driver/issues"
+        "url": "https://github.com/erdncyz/appium-tizen-driver/issues"
     },
+    "homepage": "https://github.com/erdncyz/appium-tizen-driver#readme",
     "engines": [
         "node"
     ],
