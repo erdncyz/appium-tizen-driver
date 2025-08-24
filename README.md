@@ -55,6 +55,7 @@ npm link
 
 # Method 3: Try official Appium driver install (may fail for custom drivers)
 appium driver install @erdncyz/appium-tizen-driver
+appium driver install --source=npm @erdncyz/appium-tizen-driver
 ```
 
 ### **Step 3: Start Appium Server**
