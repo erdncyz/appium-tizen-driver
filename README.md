@@ -59,7 +59,14 @@ appium driver install @erdncyz/appium-tizen-driver
 
 ### **Step 3: Start Appium Server**
 ```bash
+# Start with Tizen driver
 appium server --use-drivers=tizen
+
+# Start with custom port
+appium server --use-drivers=tizen --port 4724
+
+# Test server status
+curl -X GET http://localhost:4724/status
 ```
 
 ### **Step 4: Run Your Tests**
@@ -123,6 +130,9 @@ appium server --use-drivers=tizen --port 4724
 
 # Start with base path
 appium server --use-drivers=tizen --base-path /wd/hub
+
+# Test server status
+curl -X GET http://localhost:4724/status
 ```
 
 ### **W3C Capabilities (Appium 2.x - Recommended)**
