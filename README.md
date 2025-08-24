@@ -38,10 +38,9 @@ npm install -g appium@latest
 
 ### **Step 2: Install Tizen Driver**
 ```bash
-# Try official Appium driver install (may not work for custom drivers)
-appium driver install @erdncyz/appium-tizen-driver
+# Note: appium driver install may not work for custom drivers
+# If you get an error, use one of the alternative methods below
 
-# If above fails, use development mode installation:
 # Method 1: Install from GitHub (Recommended)
 git clone https://github.com/erdncyz/appium-tizen-driver.git
 cd appium-tizen-driver
@@ -53,6 +52,9 @@ npm link
 npm install @erdncyz/appium-tizen-driver
 cd node_modules/@erdncyz/appium-tizen-driver
 npm link
+
+# Method 3: Try official Appium driver install (may fail for custom drivers)
+appium driver install @erdncyz/appium-tizen-driver
 ```
 
 ### **Step 3: Start Appium Server**
@@ -79,20 +81,20 @@ const capabilities = {
 
 ### **Appium 2.x (Recommended)**
 ```bash
-# Method 1: Try official Appium driver install
-appium driver install @erdncyz/appium-tizen-driver
-
-# Method 2: Install from GitHub (Recommended if Method 1 fails)
+# Method 1: Install from GitHub (Recommended)
 git clone https://github.com/erdncyz/appium-tizen-driver.git
 cd appium-tizen-driver
 npm install
 npm run build
 npm link
 
-# Method 3: Install from NPM and link manually
+# Method 2: Install from NPM and link manually
 npm install @erdncyz/appium-tizen-driver
 cd node_modules/@erdncyz/appium-tizen-driver
 npm link
+
+# Method 3: Try official Appium driver install (may fail for custom drivers)
+appium driver install @erdncyz/appium-tizen-driver
 
 # Method 4: Install globally (not recommended for Appium 2.x)
 npm install -g @erdncyz/appium-tizen-driver
